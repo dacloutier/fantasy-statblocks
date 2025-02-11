@@ -1,0 +1,222 @@
+{
+    "blocks": [
+        {
+            "type": "inline",
+            "id": "ca8ae93ac8db",
+            "properties": [],
+            "hasRule": true,
+            "nested": [
+                {
+                    "type": "group",
+                    "id": "8b29ea0bab28",
+                    "properties": [
+                        "name",
+                        "size",
+                        "type",
+                        "subtype",
+                        "alignment"
+                    ],
+                    "nested": [
+                        {
+                            "type": "inline",
+                            "id": "b94978681a6a",
+                            "properties": [],
+                            "hasRule": false,
+                            "nested": [
+                                {
+                                    "type": "heading",
+                                    "id": "fa39aa98d8f8",
+                                    "properties": [
+                                        "name"
+                                    ],
+                                    "conditioned": true,
+                                    "size": 1
+                                },
+                                {
+                                    "type": "inline",
+                                    "id": "eaab38d98a3a",
+                                    "properties": [],
+                                    "hasRule": false,
+                                    "nested": [
+                                        {
+                                            "type": "action",
+                                            "id": "28ca291a7a6b",
+                                            "icon": "sword",
+                                            "callback": "try { InitiativeTracker.newEncounter({roll: true, creatures: [monster]}); } catch(e) {}"
+                                        },
+                                        {
+                                            "type": "action",
+                                            "id": "5b394a7a0a4b",
+                                            "icon": "plus-with-circle",
+                                            "callback": "try { InitiativeTracker.addCreatures([monster]); } catch(e) {}"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "subheading",
+                            "id": "baf8cb6a88db",
+                            "properties": [
+                                "type",
+                                "size"
+                            ],
+                            "conditioned": true,
+                            "separator": ", "
+                        }
+                    ],
+                    "conditioned": true
+                },
+                {
+                    "type": "image",
+                    "id": "9aeaa94b99fa",
+                    "properties": [
+                        "image"
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "table",
+            "id": "999948e8ba0a",
+            "properties": [
+                "stats"
+            ],
+            "headers": [
+                "M",
+                "WS",
+                "BS",
+                "S",
+                "T",
+                "I",
+                "Ag",
+                "Dex",
+                "Int",
+                "WP",
+                "Fel",
+                "W"
+            ],
+            "calculate": false,
+            "hasRule": true,
+            "conditioned": true
+        },
+        {
+            "type": "group",
+            "id": "793978cb798b",
+            "properties": [
+                "ac",
+                "hp",
+                "speed"
+            ],
+            "nested": [
+                {
+                    "type": "inline",
+                    "id": "d89b6a9bcae8",
+                    "properties": [],
+                    "nested": [
+                        {
+                            "type": "text",
+                            "id": "8a9a38eb093b",
+                            "properties": [
+                                "initiative"
+                            ],
+                            "text": null,
+                            "fallback": "-",
+                            "heading": "Initiative"
+                        },
+                        {
+                            "type": "text",
+                            "id": "8a9bb8492ab8",
+                            "properties": [
+                                "defense"
+                            ],
+                            "text": null,
+                            "fallback": "-",
+                            "heading": "Defense"
+                        },
+                        {
+                            "type": "text",
+                            "id": "890b0a392b98",
+                            "properties": [
+                                "hp"
+                            ],
+                            "text": null,
+                            "fallback": "-",
+                            "heading": "Wounds"
+                        }
+                    ]
+                },
+                {
+                    "type": "group",
+                    "id": "288aa81a4b89",
+                    "properties": [],
+                    "nested": [
+                        {
+                            "type": "traits",
+                            "id": "aa9b0bda7958",
+                            "properties": [
+                                "skills"
+                            ],
+                            "fallback": "-",
+                            "heading": "Skills",
+                            "dice": true
+                        }
+                    ]
+                }
+            ],
+            "hasRule": false,
+            "conditioned": true
+        },
+        {
+            "type": "traits",
+            "id": "8a481a8bcbb9",
+            "properties": [
+                "attacks"
+            ],
+            "fallback": "-",
+            "hasRule": false,
+            "heading": "Attacks",
+            "doNotAddClass": false,
+            "conditioned": true
+        },
+        {
+            "type": "traits",
+            "id": "89782b68a939",
+            "properties": [
+                "traits"
+            ],
+            "conditioned": true,
+            "dice": true,
+            "hasRule": false,
+            "diceProperty": "1d%",
+            "heading": "Traits"
+        },
+        {
+            "type": "traits",
+            "id": "f9d899ca5969",
+            "properties": [
+                "optional"
+            ],
+            "fallback": "-",
+            "headingProp": false,
+            "conditioned": true,
+            "heading": "Optional",
+            "hasRule": false
+        },
+        {
+            "type": "traits",
+            "id": "da586868aa8b",
+            "properties": [
+                "spells"
+            ],
+            "fallback": "-",
+            "conditioned": true,
+            "heading": "Spells"
+        }
+    ],
+    "name": "Warhammer Fantasy Roleplay 4e",
+    "id": "wfrp-4e-block",
+    "cssProperties": {
+        "primaryColor": "#404040"
+    }
+}
